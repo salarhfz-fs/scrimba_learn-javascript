@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles/index.css" type="text/css" />
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h3>HOME</h3>
+            <div id="home-score" class="score"></div>
+            <ol class="increment-container">
+                <li onclick="updateScore(1, 'home')">+1</li>
+                <li onclick="updateScore(2, 'home')">+2</li>
+                <li onclick="updateScore(3, 'home')">+3</li>
+            </ol>
+        </div>
+        <div>
+            <h3>GUEST</h3>
+            <div id="guest-score" class="score"></div>
+            <ol class="increment-container">
+                <li onclick="updateScore(1, 'guest')">+1</li>
+                <li onclick="updateScore(2, 'guest')">+2</li>
+                <li onclick="updateScore(3, 'guest')">+3</li>
+            </ol>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
